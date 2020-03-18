@@ -1,8 +1,13 @@
+name: List TeX files
+      id: list-tex-files
+      run: |
+        SOURCE_FILES=$(find . -name "*.tex")
+
 name: LaTeX to PDF
 
 on:
   push:
-    paths: *.tex
+    paths: ${{ steps.list-tex-files.outputs.tex-files }}
     tags: 週報*_*_*
 
 jobs:
