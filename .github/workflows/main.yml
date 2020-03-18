@@ -3,8 +3,8 @@ name: LaTeX to PDF
 on:
   push:
    paths:
-      - *.tex
-    tags: 週報*_*_*
+      - '**.tex'
+   tags: 週報*_*_*
 
 jobs:
   build:
