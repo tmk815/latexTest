@@ -2,7 +2,7 @@ name: LaTeX to PDF
 
 on:
   push:
-    paths: main.tex
+    paths: *.tex
     tags: 週報*_*_*
 
 jobs:
